@@ -1,3 +1,3 @@
 # PayMind
 
-# A subscription manager site with ML integration
+ A subscription manager site with ML integration
