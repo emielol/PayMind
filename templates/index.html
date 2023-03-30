@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PayMind</title>
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="" />
+  </head>
+  
+  <body>
+    <div class="header">
+      <a href="#">About</a>  
+      <a href="#">Get Started</a>  
+      <h1>Paymind</h1>
+      <a href="#">Search</a>   <!--the ML page idk-->
+      <a href="#">Login</a>  
+    </div>
+    <div class="">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="PayMind" title="PayMind">
+    
+      <h2 class="slogan">All of your expenses without any suprises.</h2>
+    </div>
+    <div class="content">
+
+      <div class="about">
+        <h3>Who We Are.</h3>
+        <div>
+          <p>PayMind's goal is to ensure that forgotten, pesky expenses do not creep up on people at random.  We want to make sure that you have knowledge further than just the price and name of the subscription, but the full details. </p>
+        </div>
+        <div>
+          <p> PayMind is your personal subscription manager.  Our calendars are used keep track of your online subscriptions, and we make sure to remind you of the upcoming charge dates. Can't afford to pay your current subscription and need an alternative?  We got it; PayMind also has a machine learning feature that allows you to compare one subscription to the price of others.</p>
+        </div>
+      </div>
+
+      <div class="subcriptions-stats">
+        <h3>Hottest Subscriptions</h3>
+        <p>There are many categories of subscriptions out today, and the market is only growing.</p>
+        <div class="subcriptions-box">
+          <h3>Streaming: Netflix</h3>
+          <img src="{{ url_for('static', filename='netflix-logo') }}" alt="Netflix">
+          <p>Netflix has an astounding 213 million subscribers. It is an on-demand service brand and has several hit shows and movies such as <a href="">Stranger Things.  Amazon Prime comes second with 175 Million subscribers</a></p>
+
+        </div>
+
+        <div class="subcriptions-box">
+          <h3>E-Commerce: Amazon</h3>
+          <img src="{{ url_for('static', filename='prime-logo') }}" alt="Amazon Prime" title="Amazon Prime">
+          <p>Amazon Prime has over 200 million subscribers, and just 74% of their subscruptions are from the US. As of 2021, it is available in 22 countries.</p>
+        </div> 
+      </div>
+     <div>
+        <button>Get Started!</button>
+     </div> 
+    </div>
+    <div class="footer">
+        <div class="footer-right">
+          <h4>PayMind</h4>
+        </div>
+        <div class="footer-left">
+          <ul>
+            <li>About Us</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
