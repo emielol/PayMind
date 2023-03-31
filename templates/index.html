@@ -5,53 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>PayMind</title>
-    <link rel="stylesheet" href="" />
-    <link rel="icon" href="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+  
+    
   </head>
   
   <body>
     <div class="header">
-      <a href="#">About</a>  
-      <a href="#">Get Started</a>  
-      <h1>Paymind</h1>
-      <a href="#">Search</a>   <!--the ML page idk-->
-      <a href="#">Login</a>  
+      <a href="#about-section" class="header-link">About</a>  
+      <a href="#" class="header-link">Get Started</a>  
+      <h1>PayMind</h1>
+      <a href="#" class="header-link">Search</a>   <!--the ML page idk-->
+      <a href="#stats-section" class="header-link">Statistics</a>  
     </div>
-    <div class="">
-      <img src="{{ url_for('static', filename='logo.png') }}" alt="PayMind" title="PayMind">
-    
-      <h2 class="slogan">All of your expenses without any suprises.</h2>
+    <div class="logo-slogan-container">
+      <img class="logo" src="{{ url_for('static', filename='logo.png') }}" alt="PayMind" title="PayMind">
+      <h1 class="name">PayMind</h1>
+      <h2 class="slogan">All of your expenses, no suprises.</h2>
     </div>
     <div class="content">
 
-      <div class="about">
-        <h3>Who We Are.</h3>
-        <div>
-          <p>PayMind's goal is to ensure that forgotten, pesky expenses do not creep up on people at random.  We want to make sure that you have knowledge further than just the price and name of the subscription, but the full details. </p>
+      <div id="about-section"class="about">
+        <h3 id="about_title">Who We Are</h3>
+        <div class="empty">
+
         </div>
-        <div>
-          <p> PayMind is your personal subscription manager.  Our calendars are used keep track of your online subscriptions, and we make sure to remind you of the upcoming charge dates. Can't afford to pay your current subscription and need an alternative?  We got it; PayMind also has a machine learning feature that allows you to compare one subscription to the price of others.</p>
+        <div id='about-close'class="about-info-container">
+          <p class="about-info">PayMind's goal is to ensure that forgotten, pesky expenses do not creep up on people at random.  <br><br>We want to make sure that you have knowledge further than just the price and name of the subscription, but the full details. </p>
+        </div>
+        <div class="about-info-container">
+          <p class="about-info"> PayMind is your personal subscription manager.  Our calendars are used keep track of your online subscriptions, and we make sure to remind you of the upcoming charge dates. <br><br>Can't afford to pay your current subscription and need an alternative?  We got it; PayMind also has a machine learning feature that allows you to compare one subscription to the price of others.</p>
         </div>
       </div>
 
-      <div class="subcriptions-stats">
-        <h3>Hottest Subscriptions</h3>
-        <p>There are many categories of subscriptions out today, and the market is only growing.</p>
-        <div class="subcriptions-box">
-          <h3>Streaming: Netflix</h3>
-          <img src="{{ url_for('static', filename='netflix-logo') }}" alt="Netflix">
-          <p>Netflix has an astounding 213 million subscribers. It is an on-demand service brand and has several hit shows and movies such as <a href="">Stranger Things.  Amazon Prime comes second with 175 Million subscribers</a></p>
+      <div id="stats-section" class="home-subhead subcriptions-stats">
+        <h3 class="stats-title">Hottest Subscriptions</h3>
+        <p class="stats-caption">There are many categories of subscriptions out today, and the market is only growing.</p>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col subcriptions-box">
+              <h3 class="stat-info">Streaming: Netflix</h3>
+          <img class="netflix-icon" src="{{ url_for('static', filename='netflix-logo') }}" alt="Netflix">
+          <p class="stat-info">Netflix has an astounding 213 million subscribers. It is an on-demand service brand and has several hit shows and movies such as <a class="header-link" href="">Stranger Things</a>.  Amazon Prime comes second with 175 Million subscribers</p>
 
+            </div>
+            <div class="col subcriptions-box">
+              <h3 class="stat-info">E-Commerce: Amazon</h3>
+          <img class="amazon-logo" src="{{ url_for('static', filename='prime-logo') }}" alt="Amazon Prime" title="Amazon Prime">
+          <p class="stat-info">Amazon Prime has over 200 million subscribers, and just 74% of their subscruptions are from the US. As of 2021, it is available in 22 countries.</p>
+            </div>
+            
+          </div>
         </div>
-
-        <div class="subcriptions-box">
-          <h3>E-Commerce: Amazon</h3>
-          <img src="{{ url_for('static', filename='prime-logo') }}" alt="Amazon Prime" title="Amazon Prime">
-          <p>Amazon Prime has over 200 million subscribers, and just 74% of their subscruptions are from the US. As of 2021, it is available in 22 countries.</p>
-        </div> 
+        
       </div>
-     <div>
-        <button>Get Started!</button>
+     <div class="d-flex justify-content-center">
+      <button type="button" class="button btn btn-light btn-lg mx-auto">Get Started!</button>
+        
      </div> 
     </div>
     <div class="footer">
@@ -59,11 +70,11 @@
           <h4>PayMind</h4>
         </div>
         <div class="footer-left">
-          <ul>
-            <li>About Us</li>
-            <li>Privacy Policy</li>
-            <li>FAQ</li>
-            <li>Contact</li>
+          <ul class="list-group list-group-flush">
+            <li class="footer-list list-group-item">About Us</li>
+            <li class=" footer-list list-group-item">Privacy Policy</li>
+            <li class="footer-list list-group-item">FAQ</li>
+            <li class="footer-list list-group-item">Contact</li>
           </ul>
         </div>
     </div>
