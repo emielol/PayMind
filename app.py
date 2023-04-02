@@ -15,6 +15,10 @@ def create_app():
 def home():
     return render_template('index.html')
 
+@app.route("/calendar")
+def calendar():
+    return render_template('calendar.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
 
