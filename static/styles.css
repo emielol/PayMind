@@ -113,13 +113,18 @@ body {
     background-color: aliceblue;
     border-width: 0;
 }
-.button {
-        margin: auto;
-        color: #256d84;
-        background-color: #cdf2b0;
-        width: 30%;
-        height: 50%;
+.button-start {
+    margin: auto;
+    color: #256d84 !important;
+    background-color: #cdf2b0 !important;
+    border-radius: 5%;
+    width: 40vh;
+    height: 20vh;
+
+    font-size: 30px;
     }
+
+
 .footer {
     background-color: #8abc9b;
     border-top: #cdf2b0;
@@ -138,5 +143,34 @@ body {
 }
 .footer-list {
     background-color: transparent;
+}
+
+.calendar-body {
+    background-color: #a2d2a3;
+}
+.how-to {
+    margin-bottom: 5%;
+    font-weight: 400;
+    
+}
+
+.calendar-container {
+    background-color: #ccf3af;
+    height: 75%;
+    width: 75%;
+    margin: auto;
+    border-radius: 4%;
+    padding: .5%;
+    color:#256d84;
+    border-width: 3%;
+}
+.form{
+    height: 30%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit {
+    margin: auto;
 }
 
